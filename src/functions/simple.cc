@@ -20,8 +20,8 @@
 
 extern "C" {
 #include <ocstack.h>
+#include <ocprovisioningmanager.h>
 #include <rd_server.h>
-#include <experimental/securevirtualresourcetypes.h>
 }
 
 std::string getDateCtor(napi_env env, napi_value *result) {
