@@ -82,8 +82,7 @@ napi_value bind_OCRDStop(napi_env env, napi_callback_info info) {
   C2J_SET_RETURN_VALUE(env, info, double, ((double)OCRDStop()));
 }
 
-napi_value bind_OCInitPM(napi_env napi_callback_info info) {
-
+napi_value bind_OCInitPM(napi_env env, napi_callback_info info) {
     J2C_DECLARE_ARGUMENTS(env, info, 1);
     J2C_GET_STRING_TRACKED_JS_THROW(acldbpath, env, arguments[0], true, "acldbpath");
     C2J_SET_RETURN_VALUE(env, info, double, ((double)OCInitPM(acldbpath)));
