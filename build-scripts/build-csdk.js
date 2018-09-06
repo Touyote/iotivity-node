@@ -239,6 +239,10 @@ shelljs.cp(
 		"securevirtualresourcetypes.h" ),
 	path.join( repoPaths.iotivity, "resource", "csdk", "security", "provisioning", "include",
 		"ocprovisioningmanager.h" ),
+	path.join( repoPaths.iotivity, "resource", "csdk", "security", "provisioning", "include",
+		"pmtypes.h" ),
+	path.join( repoPaths.iotivity, "resource", "csdk", "security", "provisioning", "include",
+		"ownershiptransfermanager.h" ),
 	path.join( repoPaths.iotivity, "resource", "c_common", "platform_features.h" ),
 	path.join( repoPaths.iotivity, "extlibs", "tinycbor", "tinycbor", "src", "cbor.h" ),
 	repoPaths.installHeaders );
