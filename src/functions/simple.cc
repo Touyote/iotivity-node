@@ -21,6 +21,7 @@
 extern "C" {
 #include <ocstack.h>
 #include <rd_server.h>
+#include <ocprovisioningmanager.h>
 }
 
 std::string getDateCtor(napi_env env, napi_value *result) {
