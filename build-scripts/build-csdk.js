@@ -241,11 +241,13 @@ shelljs.cp(
 		"ocprovisioningmanager.h" ),
 	path.join( repoPaths.iotivity, "resource", "csdk", "security", "provisioning", "include",
 		"pmtypes.h" ),
-	path.join( repoPaths.iotivity, "resource", "csdk", "security", "provisioning", "include",
+	path.join( repoPaths.iotivity, "resource", "csdk", "security", "provisioning", "include", "internal",
 		"ownershiptransfermanager.h" ),
     path.join( repoPaths.iotivity, "resource", "csdk", "connectivity", "api", "casecurityinterface.h"),
     path.join( repoPaths.iotivity, "resource", "csdk", "connectivity", "api", "cacommon.h"),
 	path.join( repoPaths.iotivity, "resource", "c_common", "platform_features.h" ),
+	path.join( repoPaths.iotivity, "out", platform, targetArch, (process.env.npm_config_debug ? "debug" : "release"),
+               "resource", "c_common", "iotivity_config.h" ),
 	path.join( repoPaths.iotivity, "extlibs", "tinycbor", "tinycbor", "src", "cbor.h" ),
 	repoPaths.installHeaders );
 
