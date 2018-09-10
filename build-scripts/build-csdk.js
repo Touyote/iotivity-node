@@ -173,7 +173,7 @@ if ( !fs.existsSync( repoPaths.iotivity ) ) {
 	// Check out known-good commitid of tinycbor
 	run( "git", [ "checkout", "31c7f81d45d115d2007b1c881cbbd3a19618465c" ],
 		{ cwd: tinycborPath } );
-    run( "patch", ["-p1", repoPaths.iotivity+"/resource/SConscript", "./build-scripts/provisioning_mgr.patch"] );
+    //    run( "patch", ["-p1", repoPaths.iotivity+"/resource/SConscript", "./build-scripts/provisioning_mgr.patch"] );
 }
 
 if ( buildIotivity ) {

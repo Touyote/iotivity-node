@@ -1,0 +1,44 @@
+From f480cf04c5f1a2bb04584196841afbfd80d51bf5 Mon Sep 17 00:00:00 2001
+From: GASQ Romain <r.gasq@ssi.samsung.com>
+Date: Mon, 10 Sep 2018 07:31:58 -0700
+Subject: [PATCH] Update build: provisioning client
+
+---
+ resource/SConscript | 21 +++------------------
+ 1 file changed, 3 insertions(+), 18 deletions(-)
+
+diff --git a/resource/SConscript b/resource/SConscript
+index 3ec5999..0437be3 100644
+--- a/resource/SConscript
++++ b/resource/SConscript
+@@ -39,24 +39,9 @@ SConscript('#extlibs/libcoap/SConscript')
+ # Build csdk
+ SConscript('csdk/SConscript')
+ 
++print "Try build: provisioning"
++SConscript('provisioning/SConscript')
++
+ if target_os not in ['arduino', 'darwin', 'ios']:
+     # Build liboc_logger
+     SConscript('oc_logger/SConscript')
+-
+-    # Build liboc
+-    SConscript('src/SConscript')
+-
+-if target_os in ['windows', 'linux']:
+-    # Build IoTivity Procedural Client API
+-    SConscript('IPCA/SConscript')
+-
+-if target_os not in ['arduino','darwin','ios','android']:
+-    # Build examples
+-    SConscript('examples/SConscript')
+-
+-if target_os in ['linux', 'windows', 'darwin', 'msys_nt']:
+-    if target_os == 'darwin':
+-        env.Command('#/out/darwin/iotivity-csdk.framework', None, '#/tools/darwin/mkfwk_osx.sh')
+-
+-    # Build C/C++ unit tests
+-    SConscript('unit_tests.scons')
+-- 
+2.7.4
+
