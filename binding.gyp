@@ -27,7 +27,7 @@
 				# When building internally, we use pre-defined CFLAGS/LIBS, trusting that the CSDK
 				# will be built successfully
 
-				"defines": [ "ROUTING_EP", "__WITH_DTLS__", "RD_CLIENT", "RD_SERVER" ],
+				"defines": [ "ROUTING_EP", "__WITH_DTLS__", "RD_CLIENT", "RD_SERVER", "SECURITY" ],
 				"include_dirs+": [ '<@(internalOCTBStack_include_dirs)' ],
 				"conditions": [
 
