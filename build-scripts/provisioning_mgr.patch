@@ -1,0 +1,11 @@
+--- iotivity-native/resource/SConscript	2018-09-10 06:04:53.656829256 -0700
++++ SConscript	2018-09-10 06:05:01.844606442 -0700
+@@ -39,6 +39,8 @@
+ # Build csdk
+ SConscript('csdk/SConscript')
+ 
++SConscript('provisioning/SConscript')
++
+ if target_os not in ['arduino', 'darwin', 'ios']:
+     # Build liboc_logger
+     SConscript('oc_logger/SConscript')
