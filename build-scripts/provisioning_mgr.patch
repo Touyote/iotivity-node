@@ -1,11 +1,10 @@
---- iotivity-native/resource/SConscript	2018-09-10 06:04:53.656829256 -0700
-+++ SConscript	2018-09-10 06:05:01.844606442 -0700
-@@ -39,6 +39,8 @@
- # Build csdk
- SConscript('csdk/SConscript')
- 
-+SConscript('provisioning/SConscript')
-+
- if target_os not in ['arduino', 'darwin', 'ios']:
-     # Build liboc_logger
-     SConscript('oc_logger/SConscript')
+--- iotivity-native/resource/csdk/stack/octbstack_product.def	2018-09-11 07:12:24.975756554 -0700
++++ octbstack_product.def	2018-09-11 07:12:08.312863081 -0700
+@@ -64,6 +64,7 @@
+ OCGetServerInstanceIDString
+ OCGetSupportedEndpointTpsFlags
+ OCInit
++OCInitPM
+ OCInit1
+ OCInit2
+ OCLinksPayloadArrayCreate
