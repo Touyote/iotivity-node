@@ -194,7 +194,7 @@ if ( buildIotivity ) {
 	.concat( process.env.npm_config_debug === "true" ?
 		[ "RELEASE=False", "LOGGING=False" ] : [] )
 	.concat( [ "logger", "octbstack", "connectivity_abstraction", "coap", "c_common", "ocsrm",
-		"routingmanager", "resource/csdk/security/tool", "resource_directory"
+		       "routingmanager", "resource/csdk/security/tool", "resource_directory"
 	] );
 
 	// Node 5 on Windows seems unable to run batch files

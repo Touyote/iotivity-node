@@ -43,8 +43,8 @@
 						"libraries": [
 							"-L<(module_root_dir)/iotivity-installed/lib",
 							"-Wl,-rpath <(module_root_dir)/iotivity-installed/lib",
-							"-loctbstack",
-							"-lresource_directory"
+							"<(module_root_dir)/iotivity-installed/lib/liboctbstack.a",
+							"<(module_root_dir)/iotivity-installed/lib/libresource_directory.a"
 						]
 					} ],
 
