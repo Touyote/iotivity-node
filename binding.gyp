@@ -28,7 +28,7 @@
 				# will be built successfully
 
 				"defines": [ "ROUTING_EP", "__WITH_DTLS__", "RD_CLIENT", "RD_SERVER", "SECURITY" ],
-				"include_dirs+": [ '<@(internalOCTBStack_include_dirs)' ],
+				"include_dirs+": [ "<(module_root_dir)/iotivity-installed/include" ],
 				"conditions": [
 
 					# Windows-specific way of adding libraries
