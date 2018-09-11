@@ -43,6 +43,7 @@
 						"libraries": [
 							"-L<(module_root_dir)/iotivity-installed/lib",
 							"<(module_root_dir)/iotivity-installed/lib/libconnectivity_abstraction.a",
+							"<(module_root_dir)/iotivity-installed/lib/libconnectivity_abstraction_internal.a",
 							"<(module_root_dir)/iotivity-installed/lib/libcoap.a",
 							"<(module_root_dir)/iotivity-installed/lib/libcjson.a",
 							"<(module_root_dir)/iotivity-installed/lib/libc_common.a",
@@ -53,6 +54,7 @@
 							"<(module_root_dir)/iotivity-installed/lib/libmbedx509.a",
 							"<(module_root_dir)/iotivity-installed/lib/libocsrm.a",
 							"<(module_root_dir)/iotivity-installed/lib/liboctbstack.a",
+							"<(module_root_dir)/iotivity-installed/lib/liboctbstack_internal.a",
 							"<(module_root_dir)/iotivity-installed/lib/libresource_directory.a"
 						]
 					} ],
