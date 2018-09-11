@@ -42,8 +42,8 @@
 					# Generic way that works for POSIX
 						"libraries": [
 							"-L<(module_root_dir)/iotivity-installed/lib",
-							"<(module_root_dir)/iotivity-installed/lib/libconnectivity_abstraction.a",
 							"<(module_root_dir)/iotivity-installed/lib/libconnectivity_abstraction_internal.a",
+							"<(module_root_dir)/iotivity-installed/lib/libconnectivity_abstraction.a",
 							"<(module_root_dir)/iotivity-installed/lib/libcoap.a",
 							"<(module_root_dir)/iotivity-installed/lib/libcjson.a",
 							"<(module_root_dir)/iotivity-installed/lib/libc_common.a",
