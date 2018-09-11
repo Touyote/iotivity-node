@@ -47,6 +47,7 @@
 							"<(module_root_dir)/iotivity-installed/lib/libc_common.a",
 							"<(module_root_dir)/iotivity-installed/lib/libroutingmanager.a",
 							"<(module_root_dir)/iotivity-installed/lib/liblogger.a",
+							"<(module_root_dir)/iotivity-installed/lib/libjson.a",
 							"<(module_root_dir)/iotivity-installed/lib/libmbedtls.a",
 							"<(module_root_dir)/iotivity-installed/lib/libmbedcrypto.a",
 							"<(module_root_dir)/iotivity-installed/lib/libmbedx509.a",
