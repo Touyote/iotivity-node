@@ -27,7 +27,7 @@
 				# When building internally, we use pre-defined CFLAGS/LIBS, trusting that the CSDK
 				# will be built successfully
 
-				"defines": [ "ROUTING_EP", "__WITH_DTLS__", "RD_CLIENT", "RD_SERVER", "SECURITY" ],
+				"defines": [ "ROUTING_EP", "__WITH_DTLS__", "RD_CLIENT", "RD_SERVER" ],
 				"include_dirs+": [ "<(module_root_dir)/iotivity-installed/include" ],
 				"conditions": [
 
@@ -42,6 +42,7 @@
 					# Generic way that works for POSIX
 						"libraries": [
 							"-L<(module_root_dir)/iotivity-installed/lib",
+							"-Wl, -rpath <(module_root_dir)/iotivity-installed/lib",
 							"<(module_root_dir)/iotivity-installed/lib/libconnectivity_abstraction_internal.a",
 							"<(module_root_dir)/iotivity-installed/lib/libconnectivity_abstraction.a",
 							"<(module_root_dir)/iotivity-installed/lib/libcoap.a",
